@@ -6,6 +6,8 @@ CREATE TABLE Book (
 	genre VARCHAR(100),
 	stock_quantity INT,
 	restock_threshold INT,
-	publisher_id INT,
+	publisher_name VARCHAR(255) NOT NULL,
+	publisher_email VARCHAR(255) NOT NULL,
+	publisher_phone_number VARCHAR(50) NOT NULL,
 	FOREIGN KEY (publisher_id) REFERENCES Publisher(publisher_id)
 );
